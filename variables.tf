@@ -1,9 +1,20 @@
 variable "region" {
   type        = string
-  default     = "us-central1"
+  default     = "europe-north1"
   description = "GCP region to deploy clusters."
 }
 
+variable "network" {
+  type        = string
+  default     = "default"
+  description = "GCP network to deploy clusters."
+}
+
+variable "subnetwork" {
+  type        = string
+  default     = "europe-north1"
+  description = "GCP subnetwork to deploy clusters."
+}
 variable "cluster_name" {
   type        = string
   default     = "tfc-pipelines"
